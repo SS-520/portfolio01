@@ -1,46 +1,58 @@
-# Getting Started with Create React App
+# portfolio01
+ポートフォリオ用アプリ
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 概要
 
-## Available Scripts
+- お買い物リスト
+- 一人用ではなく、複数人分をまとめて購入する前提
+  - 誰が何を何個購入希望かをそれぞれ任意のタイミングで確認できる
+  - 誰の総額が何円になるか任意のタイミングで確認できる
+  - 全員分の買い物をすると総額何円になるか常に確認できる
+- イベント会場での会計管理などでの使用を想定→想定メインの環境はスマートフォン
+- 普段はスプレッドシートで管理しているものをwebアプリとして作成を試みる
+- 対象とするイベントは2020年に開催された[うたの☆プリンスさまっ♪ All-Star Shop](https://www.utapri.com/allstarshop/)
+  - アイテムのバリエーションとなるキャラクター数が一番多いため選出
 
-In the project directory, you can run:
+## 画面
 
-### `npm start`
+### イメージ図
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [リンク](https://www.figma.com/proto/kMeZXP4Le6tEgsu4irMmKe/%E3%81%8A%E4%BD%BF%E3%81%84%E3%83%AA%E3%82%B9%E3%83%88?type=design&node-id=27-299&t=ocmVMsSHyGoJUkCI-1&scaling=scale-down&page-id=0%3A1&mode=design)（figmaで簡易作成）
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 構成
+1. メニュー画面
+   1. 管理画面
+      1. イベント登録画面（DB連携があるため製作優先度低）
+      2. 商品登録画面（DB連携があるため製作優先度低）
+   2. ユーザー画面（ユーザー公開されるTOP画面はここ）
+      1. イベントリスト
+         1. お使いリスト
+            1. イベント現地での購入結果記入表
+                - 完売・現地での追加購入などが発生するためあると便利
 
-### `npm test`
+## 機能
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### メニュー画面
 
-### `npm run build`
+- メニュー表示
+- 画面遷移
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 管理画面
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- メニュー表示
+- 画面遷移
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ユーザー画面（イベントリスト）
 
-### `npm run eject`
+- 開催年度別イベント一覧表示
+- イベントごとのお使いリストへの遷移
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### お使いリスト
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- アイテム表示
+  - 金額
+  - 購入上限数
+  - 販売開始日
+  - 種類別個数の入力
+  - リセットボタン（ランダム商品）
+  - 上限ボタン（ランダム商品）
