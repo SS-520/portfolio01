@@ -17,7 +17,7 @@
 
 ### イメージ図
 
-- <a href="[URL](https://www.figma.com/proto/kMeZXP4Le6tEgsu4irMmKe/%E3%81%8A%E4%BD%BF%E3%81%84%E3%83%AA%E3%82%B9%E3%83%88?type=design&node-id=27-299&t=ocmVMsSHyGoJUkCI-1&scaling=scale-down&page-id=0%3A1&mode=design)" target="_blank" rel="noopener noreferrer">リンク</a>（figmaで簡易作成）
+- [リンク](https://www.figma.com/proto/kMeZXP4Le6tEgsu4irMmKe/%E3%81%8A%E4%BD%BF%E3%81%84%E3%83%AA%E3%82%B9%E3%83%88?type=design&node-id=27-299&t=ocmVMsSHyGoJUkCI-1&scaling=scale-down&page-id=0%3A1&mode=design)（figmaで簡易作成）
 
 ### 構成
 1. メニュー画面
