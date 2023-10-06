@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&display=swap');
+
+.page-title {
+  font-family: 'Caladea', serif;
+  font-weight: bold;
+  text-align: center;
+  flex-basis: 70%;
+  font-size: 2.25em !important;
+}
+
+.back-button,
+.go-button {
+  flex-basis: 15%;
+  text-align: center;
+  font-size: 2em;
+}
+
