@@ -11,9 +11,13 @@ import PageTitle from '../component/PageTitle';
 import MenuButton from '../component/MenuButton';
 
 import '../contents/App.css';
+// import { isLoading } from '../common/common.js';
 
 // -------------- ここから本文 --------------
 export function Management() {
+
+  // ローディング画面表示
+  // isLoading(true);
   
   // 表示ページ名
   const title: string = "MANAGEMENT";
@@ -25,22 +29,23 @@ export function Management() {
   const GoodsManageIcon = (): JSX.Element => { 
     return <FaPenFancy />
   }
+
+  // ローディング画面非表示
+    // isLoading(false);
   
   // 描画内容
   return (
-    <>
-      <main>
-        <div className='contents-header'>
-          <div className='back-button'><NavLink to='../'><RiDeleteBack2Fill /></NavLink></div>
-          <PageTitle pageTitle={title} />
-          <div className='go-button'></div>
-        </div>
-        <div className='contents-main'>
-          <MenuButton buttonLabel='イベント管理' buttonName='event-management' buttonIcon={<EventManageIcon />} isUse={true} />
-          <MenuButton buttonLabel='グッズ管理' buttonName='goods-management' buttonIcon={<GoodsManageIcon />} isUse={true} />
-        </div>
-      </main>
-    </>
+    <main id='management'>
+      <div className='contents-header'>
+        <div className='back-button'><NavLink to='../'><RiDeleteBack2Fill /></NavLink></div>
+        <PageTitle pageTitle={title} />
+        <div className='go-button'></div>
+      </div>
+      <div className='contents-main'>
+        <MenuButton buttonLabel='イベント管理' buttonName='event-management' buttonIcon={<EventManageIcon />} isUse={true} />
+        <MenuButton buttonLabel='グッズ管理' buttonName='goods-management' buttonIcon={<GoodsManageIcon />} isUse={true} />
+      </div>
+    </main>
   );
 }
 // -------------- 本文ここまで --------------

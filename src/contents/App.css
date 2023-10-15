@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@400;700&display=swap');
+
+/* EventList */
+.event-year {
+    font-family: 'Caladea', serif;
+    margin: 0.5em 0 0;
+    text-align: center;
+}
+.event-list {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5em 0.25em;
+}
+
+.event {
+    display: flex;
+}
+
+.event-name {
+    width: 80%;
+    text-align: left;
+}
+
+.wish-button,
+.result-button {
+    font-family: 'Caladea', serif;
+    margin: 0 2.5px;
+    width: 12.5%;
+    border: none;
+    background-color: #006880;
+    color: #E4F2F5;
+    border-radius: 2.5px;
+    padding: 3px 0;
+    font-size: 0.8em;
+}
